@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <!--Logo-->
@@ -22,25 +22,28 @@
         <EditText
             android:inputType="text"
             android:hint="User :"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Password-->
         <EditText
             android:inputType="textPassword"
             android:hint="Password :"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Login-->
         <Button
             android:text="Login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Register-->
         <TextView
-            android:layout_marginTop="18dp"
+            android:clickable="true"
+            android:id="@+id/txtRegister"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
             android:textSize="18sp"
             android:text="New Register"
