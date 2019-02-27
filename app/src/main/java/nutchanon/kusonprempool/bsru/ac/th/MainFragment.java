@@ -31,7 +31,7 @@ public class MainFragment extends Fragment {
     }    //Main Method
 
     private void registerController() {
-        TextView textView=getView().findViewById(R.id.txtRegister);
+        TextView textView = getView().findViewById(R.id.txtRegister);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,35 @@ public class MainFragment extends Fragment {
                         .commit();
             }
         });
+        TextView textView1 = getView().findViewById(R.id.txtpageone);
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Replace Fragment
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.layoutMainFragment, new p1Fragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        TextView textView2 = getView().findViewById(R.id.txtpagetwo);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Replace Fragment
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.layoutMainFragment, new p2Fragment())
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

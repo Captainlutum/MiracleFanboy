@@ -50,6 +50,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <!--Page1-->
+        <TextView
+            android:clickable="true"
+            android:id="@+id/txtpageone"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="Liquid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--Page2-->
+        <TextView
+            android:clickable="true"
+            android:id="@+id/txtpagetwo"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="2+2 is 4 - 1 that 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </FrameLayout>
