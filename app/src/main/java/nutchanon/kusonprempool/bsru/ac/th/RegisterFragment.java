@@ -55,10 +55,10 @@ public class RegisterFragment extends Fragment {
 
                 aBoolean = false;
                 switch (checkedId) {
-                    case R.id radMale:
+                    case R.id.radMale:
                         genderString = "Male";
                         break;
-                    case R.id radFemale:
+                    case R.id.radFemale:
                         genderString = "Female";
                         break;
                 }
@@ -103,7 +103,7 @@ public class RegisterFragment extends Fragment {
         } else if (aBoolean) {
             myAlert.normalDialog("No Gender","Please Choose Gender");
         }else{
-            
+
         }
     }
 
